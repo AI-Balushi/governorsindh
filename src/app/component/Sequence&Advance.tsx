@@ -5,7 +5,7 @@ import Web2Nextjs from "../../../Images/web2NextJs.jpg";
 import EarnAsLearn from "../../../Images/EarnAsLearn.jpg";
 import AIImg from "../../../Images/AIImg.jpg";
 import Web3 from "../../../Images/Web3.jpg";
-import Cloud from "../../../Images/CLoudNative.jpg";
+import Cloud from "../../../Images/CloudNative.jpg";
 import Ambient from "../../../Images/Ambient.jpg";
 import Genomics from "../../../Images/Genomics.jpg";
 import Automation from "../../../Images/Automation.jpg";
@@ -13,112 +13,69 @@ import Automation from "../../../Images/Automation.jpg";
 function CourseSequence() {
   return (
     <div className="md:m-20 m-5 space-y-20">
+      {/* Core Courses Section */}
       <h1 className="text-[#044E83] md:text-3xl text-2xl font-bold md:text-left text-center">
         Core Courses Sequence
       </h1>
-      <div className="grid md:grid-cols-3 grid-cols-1 gap-10 place-items-center">
+
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-10 md:px-10 px-4">
         <div className="h-60 md:w-72 w-full shadow-2xl hover:scale-105">
-          <div className="h-[80%] rounded-2xl">
+          <div className="h-[80%]">
             <Image
               src={ProgrmFundamentl}
-              alt="progrmFundamental"
-              className="object-cover w-full h-full"
+              alt="Programming Fundamentals"
+              className="object-cover w-full h-full rounded-2xl"
             />
           </div>
-          <h1 className="text-center font-bold">Programming Fundamentals</h1>
+          <h1 className="text-center font-bold mt-0">Programming Fundamentals</h1> {/* Set mt to 0 */}
         </div>
         <div className="h-60 md:w-72 w-full shadow-2xl hover:scale-105">
           <div className="h-[80%]">
             <Image
               src={Web2Nextjs}
-              alt="Web2Nextjs"
-              className="object-cover w-full h-full"
+              alt="Web2 Using NextJS"
+              className="object-cover w-full h-full rounded-2xl"
             />
           </div>
-          <h1 className="text-center font-bold">Programming Fundamentals</h1>
+          <h1 className="text-center font-bold mt-0">Web2 Using NextJS</h1> {/* Set mt to 0 */}
         </div>
         <div className="h-60 md:w-72 w-full shadow-2xl hover:scale-105">
           <div className="h-[80%]">
             <Image
               src={EarnAsLearn}
-              alt="EarnAsLearn"
-              className="object-cover w-full h-full"
+              alt="Earn As You Learn"
+              className="object-cover w-full h-full rounded-2xl"
             />
           </div>
-          <h1 className="text-center font-bold">Programming Fundamentals</h1>
+          <h1 className="text-center font-bold mt-0">Earn As You Learn</h1> {/* Set mt to 0 */}
         </div>
       </div>
 
+      {/* Advanced Courses Section */}
       <div className="space-y-8">
         <h1 className="text-[#044E83] md:text-3xl text-2xl font-bold md:text-left text-center">
           Advanced Courses
         </h1>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-10 md:px-10">
-          <div className="h-60 md:w-72 w-full shadow-2xl hover:scale-105">
-            <div className="h-[80%]">
-              <Image
-                src={AIImg}
-                alt="AIImg"
-                className="object-cover w-full h-full"
-              />
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-10 md:px-10 px-4">
+          {[
+            { src: AIImg, alt: "Artificial Intelligence", title: "Artificial Intelligence" },
+            { src: Web3, alt: "Web 3 and Metaverse", title: "Web 3 and Metaverse" },
+            { src: Cloud, alt: "Cloud-Native Computing", title: "Cloud-Native Computing" },
+            { src: Ambient, alt: "Ambient Computing and IoT", title: "Ambient Computing and IoT" },
+            { src: Genomics, alt: "Genomics and Bioinformatics", title: "Genomics and Bioinformatics" },
+            { src: Automation, alt: "Network Programmability and Automation", title: "Network Programmability and Automation" }
+          ].map((course, index) => (
+            <div key={index} className="h-60 md:w-72 w-full shadow-2xl hover:scale-105">
+              <div className="h-[80%]">
+                <Image
+                  src={course.src}
+                  alt={course.alt}
+                  className="object-cover w-full h-full rounded-2xl"
+                />
+              </div>
+              <h1 className="text-center font-bold mt-2">{course.title}</h1>
             </div>
-            <h1 className="text-center font-bold">Artificial Intelligence</h1>
-          </div>
-          <div className="h-60 md:w-72 w-full shadow-2xl hover:scale-105">
-            <div className="h-[80%]">
-              <Image
-                src={Web3}
-                alt="Web3"
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <h1 className="text-center font-bold">Web 3 and Metaverse</h1>
-          </div>
-          <div className="h-60 md:w-72 w-full shadow-2xl hover:scale-105">
-            <div className="h-[80%]">
-              <Image
-                src={Cloud}
-                alt="CLoud"
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <h1 className="text-center font-bold">Cloud-Native Computing</h1>
-          </div>
-          <div className="h-60 md:w-72 w-full shadow-2xl hover:scale-105">
-            <div className="h-[80%]">
-              <Image
-                src={Ambient}
-                alt="Ambient"
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <h1 className="text-center font-bold">Ambient Computing and IoT</h1>
-          </div>
-          <div className="h-60 md:w-72 w-full shadow-2xl hover:scale-105">
-            <div className="h-[80%]">
-              <Image
-                src={Genomics}
-                alt="Genomics"
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <h1 className="text-center font-bold">
-              Genomics and Bioinformatic
-            </h1>
-          </div>
-          <div className="h-60 md:w-72 w-full shadow-2xl hover:scale-105">
-            <div className="h-[80%]">
-              <Image
-                src={Automation}
-                alt="Automation"
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <h1 className="text-center font-bold">
-              Network Programmability and Automation
-            </h1>
-          </div>
+          ))}
         </div>
       </div>
     </div>

@@ -18,7 +18,7 @@ function CourseDetail() {
         Certified Cloud Applied Generative AI Engineer (GenEng) and Solopreneur
         Developing Billion-Dollar Valued Developers and Solopreneurs
       </h1>
-      <p className="md:text-2xl text-1xl">
+      <p className="md:text-2xl text-1xl leading-relaxed">
         The pace of technological change is accelerating, big players like
         Microsoft, Amazon, Google, and OpenAI are winning by providing
         infrastructure, large AI foundation models, frameworks, 3D Metaverse
@@ -33,19 +33,19 @@ function CourseDetail() {
         other team members.
       </p>
       <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
-        <Image src={laptopImg} alt="laptop" className="w-80 h-60 rounded-xl shadow-2xl"/>
-        <Image src={worlCloud} alt="wordcloud" className="w-80 h-60 rounded-xl shadow-2xl"/>
-        <Image src={students} alt="students" className="w-80 h-60 rounded-xl shadow-2xl"/>
+        <Image src={laptopImg} alt="Laptop displaying generative AI tools" layout="responsive" className="rounded-xl shadow-2xl"/>
+        <Image src={worlCloud} alt="Word cloud of AI-related terms" layout="responsive" className="rounded-xl shadow-2xl"/>
+        <Image src={students} alt="Students working on cloud AI projects" layout="responsive" className="rounded-xl shadow-2xl"/>
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-5 px-5">
-  <Image src={students2} alt="students2" className="md:w-[100%] rounded-xl shadow-2xl"/>
-  <Image src={SirZiaImg} alt="Sir Zia" className="md:w-[100%] rounded-xl shadow-2xl"/>
-  <Image src={img1} alt="img1" className="md:w-[100%] rounded-xl shadow-2xl"/>
-  <Image src={img2} alt="img2" className="md:w-[100%] rounded-xl shadow-2xl"/>
-  <Image src={img3} alt="img3" className="md:w-[100%] rounded-xl shadow-2xl"/>
-  <Image src={img4} alt="img4" className="md:w-[100%] rounded-xl shadow-2xl"/>
-  <Image src={img5} alt="img5" className="md:w-[100%] rounded-xl shadow-2xl"/>
-</div>
+        <Image src={students2} alt="Group of students learning AI concepts" layout="responsive" className="rounded-xl shadow-2xl"/>
+        <Image src={SirZiaImg} alt="Sir Ziauddin explaining generative AI" layout="responsive" className="rounded-xl shadow-2xl"/>
+        <Image src={img1} alt="AI infrastructure tools" layout="responsive" className="rounded-xl shadow-2xl"/>
+        <Image src={img2} alt="Collaborative solopreneur projects" layout="responsive" className="rounded-xl shadow-2xl"/>
+        <Image src={img3} alt="Cloud computing dashboard" layout="responsive" className="rounded-xl shadow-2xl"/>
+        <Image src={img4} alt="Generative AI applications" layout="responsive" className="rounded-xl shadow-2xl"/>
+        <Image src={img5} alt="Students discussing AI workflows" layout="responsive" className="rounded-xl shadow-2xl"/>
+      </div>
     </div>
   );
 }
